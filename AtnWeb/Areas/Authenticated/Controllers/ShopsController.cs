@@ -84,5 +84,14 @@ namespace AtnWeb.Areas.Authenticated.Controllers
             _db.SaveChanges();
             return RedirectToAction(nameof(Index), "Shops");
         }
+
+        #region API
+
+        public IActionResult GetAllShops()
+        {
+            return Json(new { data =  _db.Shops.ToList()});
+        }
+
+        #endregion
     }
 }
