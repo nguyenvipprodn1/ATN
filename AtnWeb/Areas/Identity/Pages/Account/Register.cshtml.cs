@@ -78,12 +78,12 @@ namespace AtnWeb.Areas.Identity.Pages.Account
         {
             ReturnUrl = returnUrl;
             Input = new InputModel()
-            {
-                RoleList = _roleManager.Roles.Select(x => x.Name).Select(i => new SelectListItem
-                {
-                    Text = i,
-                    Value = i
-                })
+                              {
+                                  RoleList = _roleManager.Roles.Select(x => x.Name).Select(i => new SelectListItem
+                                  {
+                                      Text = i,
+                                      Value = i
+                                  })
             };
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }

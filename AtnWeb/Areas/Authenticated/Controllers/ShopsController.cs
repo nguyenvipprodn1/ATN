@@ -1,9 +1,11 @@
+using System;
 using System.Linq;
 using AtnWeb.Data;
 using AtnWeb.Models;
 using AtnWeb.Utility;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components;
 
 namespace AtnWeb.Areas.Authenticated.Controllers
 {
@@ -17,8 +19,13 @@ namespace AtnWeb.Areas.Authenticated.Controllers
             _db = db;
         }
         // GET
-        public IActionResult Index()
+        
+        public IActionResult Index(string option,string SearchString)
         {
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                return View(_db.Shops.Where(s => s.Location.ToLower() == SearchString.ToLower()));
+            }
             return View(_db.Shops.ToList());
         }
         [HttpGet]

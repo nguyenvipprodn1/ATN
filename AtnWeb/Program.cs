@@ -20,7 +20,7 @@ namespace AtnWeb
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseUrls("http://0.0.0.0:9000");
+                    //webBuilder.UseUrls("http://0.0.0.0:9000");
                     webBuilder.UseStartup<Startup>();
                 });
     }

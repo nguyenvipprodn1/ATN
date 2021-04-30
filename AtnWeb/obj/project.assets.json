@@ -8671,19 +8671,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/minhtri/.nuget/packages/": {}
+    "/Users/nguyenminhtri/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/minhtri/Documents/Dev/RiderProjects/AtnWeb/AtnWeb/AtnWeb.csproj",
+      "projectUniqueName": "/Users/nguyenminhtri/Documents/Develop/ATN/ATN/AtnWeb/AtnWeb.csproj",
       "projectName": "AtnWeb",
-      "projectPath": "/Users/minhtri/Documents/Dev/RiderProjects/AtnWeb/AtnWeb/AtnWeb.csproj",
-      "packagesPath": "/Users/minhtri/.nuget/packages/",
-      "outputPath": "/Users/minhtri/Documents/Dev/RiderProjects/AtnWeb/AtnWeb/obj/",
+      "projectPath": "/Users/nguyenminhtri/Documents/Develop/ATN/ATN/AtnWeb/AtnWeb.csproj",
+      "packagesPath": "/Users/nguyenminhtri/.nuget/packages/",
+      "outputPath": "/Users/nguyenminhtri/Documents/Develop/ATN/ATN/AtnWeb/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/minhtri/.nuget/NuGet/NuGet.Config"
+        "/Users/nguyenminhtri/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8790,7 +8790,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.408/RuntimeIdentifierGraph.json"
       }
     }
   }
